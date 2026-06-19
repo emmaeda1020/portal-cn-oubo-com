@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欧博体育 | 收藏每一次专注</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #faf8f5;
+            font-family: 'Georgia', 'Times New Roman', '宋体', serif;
+            color: #2c2b28;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #fffcf9;
+            border-radius: 24px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.03);
+            padding: 2.8rem 2.5rem;
+        }
+
+        /* hero */
+        .hero {
+            text-align: center;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid #ece7e0;
+        }
+
+        .hero .pretitle {
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #b7a58a;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #1e1c18;
+            margin-bottom: 0.65rem;
+        }
+
+        .hero .subhead {
+            font-size: 1.1rem;
+            color: #6b6257;
+            font-style: italic;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero .tagline {
+            font-size: 0.9rem;
+            color: #9b8f7e;
+            margin-top: 0.5rem;
+        }
+
+        /* 引用块 / 提示框 */
+        .notice-box {
+            background: #f5f0ea;
+            border-left: 4px solid #c7b39b;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            color: #3d3832;
+            font-size: 0.95rem;
+        }
+
+        .notice-box strong {
+            color: #2b241d;
+        }
+
+        /* section 通用 */
+        section {
+            margin: 2.2rem 0;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: #1f1c18;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px dotted #dcd3c8;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .feature-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .feature-item {
+            flex: 1 1 200px;
+            background: #fbf9f6;
+            padding: 1.2rem 1rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+
+        .feature-item .icon {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+            color: #2f2a24;
+        }
+
+        .feature-item p {
+            font-size: 0.92rem;
+            color: #5c554b;
+        }
+
+        /* faq 摘要 */
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+
+        .faq-q {
+            background: #fbf8f4;
+            padding: 0.7rem 1rem;
+            border-radius: 8px;
+            border-left: 2px solid #d6c9ba;
+        }
+
+        .faq-q .question {
+            font-weight: 500;
+            color: #2c261f;
+        }
+
+        .faq-q .answer {
+            margin-top: 0.2rem;
+            font-size: 0.93rem;
+            color: #5d554b;
+        }
+
+        /* 底部链接 */
+        .footer-links {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ece7e0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7d7264;
+        }
+
+        .footer-links a {
+            color: #4f463b;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #d6c9ba;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: #a0856b;
+            text-decoration-color: #a0856b;
+        }
+
+        .inline-link {
+            color: #4f463b;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-color: #d6c9ba;
+            transition: color 0.2s;
+        }
+
+        .inline-link:hover {
+            color: #7a6a58;
+        }
+
+        .footer-note {
+            margin-top: 1.2rem;
+            font-size: 0.82rem;
+            color: #a89c8f;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .container {
+                padding: 1.8rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .feature-grid {
+                flex-direction: column;
+            }
+            .feature-item {
+                flex: 1 1 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- hero -->
+    <div class="hero">
+        <div class="pretitle">· 再次遇见 ·</div>
+        <h1>欧博体育</h1>
+        <div class="subhead">收藏页面，让关注成为习惯</div>
+        <div class="tagline">温和陪伴 · 持续在场</div>
+    </div>
+
+    <!-- 提示框：关于收藏与回访 -->
+    <div class="notice-box">
+        <strong>📌 不妨保留一下</strong><br>
+        网络世界总在流动，将感兴趣的站点加入书签或收藏夹，下一次回来时就多一分从容。对于长期关注的读者而言，<strong>收藏</strong>本身就是一种安静的对话。
+    </div>
+
+    <!-- 优势区：为什么再次来访 -->
+    <section>
+        <h2>为何再次驻足</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <span class="icon">📖</span>
+                <h3>内容延续性</h3>
+                <p>持续更新的信息与观点，每次回访都可能发现新的视角。</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🔖</span>
+                <h3>熟悉的入口</h3>
+                <p>将页面收藏起来，就像在书架上留一个固定位置，随时可取。</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon">🧭</span>
+                <h3>节奏由你</h3>
+                <p>不必追赶推送，按照自己的频率打开、浏览、思考。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：从关注到习惯 -->
+    <section>
+        <h2>从一次访问到日常关注</h2>
+        <p>
+            很多人第一次来到 <a href="https://portal-cn-oubo.com" class="inline-link">欧博体育</a> 是因为某条资讯或某个话题。但真正让一个站点产生价值的，往往是后续的重复接触与时间沉淀。
+        </p>
+        <p>
+            无论是通过浏览器书签、手机收藏夹，还是在阅读清单里做标记，养成定期回访的习惯，能让信息获取变得更有效率。不必依赖算法推荐，自己选择关注什么、什么时候关注。
+        </p>
+        <p>
+            这个页面希望提醒你：如果觉得内容对味，不妨把它收藏起来。下次再来时，也许会有不一样的收获。
+        </p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>一些常见问题 · 摘要</h2>
+        <div class="faq-list">
+            <div class="faq-q">
+                <div class="question">Q: 如何快速再次找到这里？</div>
+                <div class="answer">大多数浏览器支持 Ctrl+D 或 菜单中「添加书签」。移动端可添加到主屏幕或收藏夹。</div>
+            </div>
+            <div class="faq-q">
+                <div class="question">Q: 需要注册或登录才能持续关注吗？</div>
+                <div class="answer">不需要。直接收藏页面即可，欧博体育的内容通常对所有人开放。</div>
+            </div>
+            <div class="faq-q">
+                <div class="question">Q: 如果忘记收藏了怎么办？</div>
+                <div class="answer">可以回到搜索入口或通过记忆中的描述再次找到。但收藏确实更省心。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="footer-links">
+        <p>你可以随时通过 <a href="https://portal-cn-oubo.com">欧博体育</a> 回到这里。<br>收藏即重逢，关注即陪伴。</p>
+        <div class="footer-note">—— 保持温和，持续在场 ——</div>
+    </div>
+</div>
+</body>
+</html>

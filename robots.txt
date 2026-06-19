@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emmaeda1020.github.io/portal-cn-oubo-com/sitemap.xml
